@@ -44,5 +44,6 @@
 		"textlabel"
 	],
 	"eslint.format.enable": true,
-	"vim.useSystemClipboard": true
+	"vim.useSystemClipboard": true,
+	"gitdoc.enabled": true
 }

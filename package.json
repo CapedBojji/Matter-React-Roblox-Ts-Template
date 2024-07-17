@@ -9,7 +9,7 @@
 	"main": "index.js",
 	"scripts": {
 		"build-dev": "cross-env NODE_ENV=development pnpm exec rbxtsc --verbose",
-		"serve": "pnpm exec rojo serve",
+		"sync-dev": "pnpm exec rojo serve",
 		"watch-dev": "cross-env NODE_ENV=development pnpm exec rbxtsc -w --verbose",
 		"darklua": "darklua process out out --verbose",
 		"lint": "pnpm exec eslint --max-warnings 0 --fix  .",
