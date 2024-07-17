@@ -4,7 +4,7 @@ import { Signal } from "@rbxts/lemon-signal";
 import type { Context } from "@rbxts/rewire";
 import { ReplicatedStorage, RunService } from "@rbxts/services";
 
-import matterReact, { reloadGui } from "client/functions/matter-react";
+import { matterReact, reloadGui } from "client/functions/matter-react";
 import { createUniqueKey, mountReact } from "client/ui/react/functions";
 import { reactConfig } from "client/ui/react/react-config";
 import { GameEvent } from "config/enums/matter";
