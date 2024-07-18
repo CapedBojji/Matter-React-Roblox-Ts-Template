@@ -1,7 +1,6 @@
 /node_modules
 /out
 *.tsbuildinfo
-eslint.config.*
 game.rbxlx
 *.tsbuildinfo
 flamework.build
