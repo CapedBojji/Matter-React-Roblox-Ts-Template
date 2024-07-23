@@ -8,19 +8,19 @@
 	"keywords": [],
 	"main": "index.js",
 	"scripts": {
-		"build-dev": "cross-env NODE_ENV=development pnpm exec rbxtsc --verbose",
-		"sync-dev": "pnpm exec rojo serve",
-		"watch-dev": "cross-env NODE_ENV=development pnpm exec rbxtsc -w --verbose",
+		"build-dev": "./scripts/build-dev.sh",
+		"sync-dev": "./scripts/sync-dev.sh",
 		"darklua": "darklua process out out --verbose",
 		"lint": "pnpm exec eslint --max-warnings 0 --fix  .",
-		"build-prod": "cross-env NODE_ENV=production pnpm exec rbxtsc --verbose",
-		"watch-prod": "cross-env NODE_ENV=production pnpm exec rbxtsc -w --verbose"
+		"test": "pnpm run build-dev && powershell.exe -Command \"Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass; .\\scripts\\run-tests.ps1\""
 	},
 	"dependencies": {
 		"@isentinel/eslint-config": "^0.5.6",
 		"@rbxts/atomic-binding": "^0.2.4",
 		"@rbxts/cmdr": "^1.12.1",
 		"@rbxts/iris": "^2.2.0-ts.0",
+		"@rbxts/jest": "0.1.0",
+		"@rbxts/jest-globals": "0.1.0",
 		"@rbxts/lemon-signal": "^1.10.0-ts.5",
 		"@rbxts/log": "^0.6.3",
 		"@rbxts/matter": "^0.8.1",
